@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numbers = +prompt("Nhap so");
+    let count = 0;
+    let total = 0;
+    for (let i = 2; count < numbers; i++) {
+        for (let j = 2; j <= i; j++) {
+            if (i % j === 0) {
+                total++;
+            }
+        }
+        if (total < 2) {
+            document.write(i + " la so nguyen to"+"<br>");
+            count++;
+        }
+        total =0;
+    }
+</script>
+</body>
+</html>
